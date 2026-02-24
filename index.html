@@ -1,11 +1,153 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>IEI Indore Local Center</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home — Institution of Engineers</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Welcome to Institution of Engineers (India) Indore Local Center</h1>
-  <p>This site is under development</p>
-</body>
 
-</html>
+  <!-- TOP STRIP -->
+  <div class="topstrip">
+    <div class="container">
+      <span>Established 1920 &nbsp;·&nbsp; Incorporated by Royal Charter in 1935</span>
+      
+    </div>
+  </div>
+
+  <!-- NAVIGATION -->
+  <nav class="nav">
+    <div class="container">
+      <a href="index.html" class="nav-brand">
+        <div class="nav-crest">IEI</div>
+        <div>
+          <span class="nav-name-main">Institution of Engineers (India)</span>
+          <span class="nav-name-sub">Indore Local Centre &nbsp;·&nbsp; Established 1969</span>
+        </div>
+      </a>
+      <button class="nav-toggle" onclick="toggleNav()" aria-label="Menu">&#9776;</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="activity.html">Activities</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-eyebrow">In the Service of Nation</div>
+      <h1>Engineering <em>a better</em> tomorrow</h1>
+      <div class="hero-rule"></div>
+      <p>We unite engineers, researchers, and academics to advance the profession through collaboration, innovation, and the highest standards of technical excellence.</p>
+      <div class="hero-actions">
+        <a href="about.html" class="btn btn-gold btn-lg">Learn About Us</a>
+        <a href="activity.html" class="btn btn-ghost btn-lg">View Activities</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <div class="stat-strip">
+    <div class="container">
+      <div class="stat-cell">
+        <div class="stat-value">1600<sup>+</sup></div>
+        <div class="stat-label">Corporate Members</div>
+      </div>
+      <div class="stat-cell">
+        <div class="stat-value">57</div>
+        <div class="stat-label">Years of Existance</div>
+      </div>
+      <div class="stat-cell">
+        <div class="stat-value">11<sup>+</sup></div>
+        <div class="stat-label">Institutional Members</div>
+      </div>
+      <div class="stat-cell">
+        <div class="stat-value">15</div>
+        <div class="stat-label">Engineering Disciplines</div>
+      </div>
+    </div>
+  </div>
+
+ 
+
+  <!-- MISSION QUOTE -->
+  <section class="section-border">
+    <div class="container container--narrow">
+      <blockquote>
+        The goal of engineering is not simply to build things, but to build things that endure.        <cite>As often said in engineering philosophy</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- QUICK LINKS -->
+  <section class="section-soft section-border">
+    <div class="container">
+      <h5 class="text-gold text-center" style="margin-bottom:6px;"></h5>
+      <h2 class="text-center" style="margin-bottom:var(--s10);">Quick Access</h2>
+      <div class="grid grid-4">
+        <div style="text-align:center; padding:var(--s6); border:1px solid var(--line); background:var(--bg);">
+          <div style="font-size:2rem; margin-bottom:var(--s4);">🎓</div>
+          <h4 style="font-family:var(--f-head); color:var(--navy); margin-bottom:var(--s2);">Membership</h4>
+          <p style="font-size:.875rem; color:var(--text-mid); max-width:none;">Join over 2 Lac corporate members.</p>
+          <a href="https://www.ieindia.org/webui/IEI-RegistrationForMembApp.aspx" class="btn btn-outline btn-sm mt-4">Join</a>
+        </div>
+        <div style="text-align:center; padding:var(--s6); border:1px solid var(--line); background:var(--bg);">
+          <div style="font-size:2rem; margin-bottom:var(--s4);">📄</div>
+          <h4 style="font-family:var(--f-head); color:var(--navy); margin-bottom:var(--s2);">Publications</h4>
+          <p style="font-size:.875rem; color:var(--text-mid); max-width:none;">Access peer-reviewed journals and reports.</p>
+          <a href="https://www.ieindia.org/webui/IEI-Publication.aspx" class="btn btn-outline btn-sm mt-4">Browse</a>
+        </div>
+        <div style="text-align:center; padding:var(--s6); border:1px solid var(--line); background:var(--bg);">
+          <div style="font-size:2rem; margin-bottom:var(--s4);">📅</div>
+          <h4 style="font-family:var(--f-head); color:var(--navy); margin-bottom:var(--s2);">Events and Activities</h4>
+          <p style="font-size:.875rem; color:var(--text-mid); max-width:none;">Conferences, seminars, and workshops.</p>
+          <a href="activity.html" class="btn btn-outline btn-sm mt-4">Indore</a>
+	  <a href="https://www.ieindia.org/webui/IEI-Activities.aspx" class="btn btn-outline btn-sm mt-4">View All</a>
+        </div>
+        <div style="text-align:center; padding:var(--s6); border:1px solid var(--line); background:var(--bg);">
+          <div style="font-size:2rem; margin-bottom:var(--s4);">🏛️</div>
+          <h4 style="font-family:var(--f-head); color:var(--navy); margin-bottom:var(--s2);">About Us</h4>
+          <p style="font-size:.875rem; color:var(--text-mid); max-width:none;">Our history, mission, and governance.</p>
+          <a href="about.html" class="btn btn-outline btn-sm mt-4">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">Institution of Engineers</div>
+          <p class="footer-desc">India's premier professional body for engineering excellence, serving members across the nation since 1920.</p>
+        </div>
+        <div>
+          <div class="footer-heading">Navigate</div>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="activity.html">Activities</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-heading">Contact</div>
+          <ul class="footer-links">
+            <li>ieindore@yahoo.co.in</li>
+            <li>indorelc@ieindia.org</li>
+            <li>S.G.S.I.T.S. Campus, 23 Visvesvaraya Marg, Indore (MP) 452003</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Institution of Engineers (India) Indore Local Centre. All rights reserved.</span>
+        <span><a href="#">Privacy Policy</a> &nbsp;·&nbsp; <a href="#">Terms of Use</a></span>
+      </div>
+    </div>
+  </footer>
+
