@@ -255,7 +255,8 @@ section { padding-block: var(--s16); }
     display: none;
     position: absolute;
     top: 100%; right: 0;
-    width: 140px;
+    width: auto;
+    min-width: fit-content;
     background: var(--bg);
     flex-direction: column;
     border-bottom: 2px solid var(--navy);
