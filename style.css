@@ -254,7 +254,8 @@ section { padding-block: var(--s16); }
   .nav-links {
     display: none;
     position: absolute;
-    top: 100%; left: 0; right: 0;
+    top: 100%; right: 0;
+    width: 140px;
     background: var(--bg);
     flex-direction: column;
     border-bottom: 2px solid var(--navy);
