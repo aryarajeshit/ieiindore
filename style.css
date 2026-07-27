@@ -568,7 +568,7 @@ textarea { resize: vertical; min-height: 110px; }
 }
 .info-row .info-text { flex: 1; }
 .info-row .info-aside {
-  flex: 0 0 280px;
+  flex: 0 0 550px;
   background: var(--bg-soft);
   border: 1px solid var(--line);
   padding: var(--s6);
@@ -722,3 +722,34 @@ textarea { resize: vertical; min-height: 110px; }
   position: absolute; width: 1px; height: 1px;
   overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap;
 }
+
+
+
+<style>
+  .iei-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    border: 1px solid #ddd;   /* ← This ensures full outer border */
+  }
+
+  .iei-table th {
+    background-color: #003366;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .iei-table td {
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+  }
+
+  .iei-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+  .iei-table tbody tr:hover {
+    background-color: #e6f2ff;
+  }
+</style>
